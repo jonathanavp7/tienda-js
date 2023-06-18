@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="contenedor-tienda">
+        <div class="superior">
+            <h1>Buy Weapons</h1>
+            <p>$ <span id="dinero"></span></p>
+        </div>
+        <hr>
+        <div class="contenedor-grid">
+            <div class="menu">
+                <div class="categorias">
+                    <ul id="menu">
+                        <li onclick="comprar(pistolas)" class="pistolas" id="pistolas">Pistolas <span>(80$)</span> </li>
+                        <li onclick="comprar(escopetas)" class="escopetas" id="escopetas">Escopetas <span>(200$)</span> </li>
+                        <li onclick="comprar(semiAutomaticas)" class="semi-auto" id="semiAuto">Semi-automaticas <span>(350$)</span> </li>
+                        <li onclick="comprar(rifles)" class="rifles" id="rifles">Rifles <span>(500$)</span> </li>
+                        <li onclick="comprar(granadas)" class="granadas" id="granadas">Granadas <span>(50$)</span> </li>
+                        <li onclick="comprar(kevlar)" class="casco-chaleco" id="kevlar">Casco y Chaleco <span>(85$)</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="images">
+                <img id="image1" src="./img/pistola.png" alt="" style="display: none;">
+                <img id="image2" src="./img/escopeta.png" alt="" style="display: none;">
+                <img id="image3" src="./img/semi.png" alt="" width="300px" height="240px" style="display: none;">
+                <img id="image4" src="./img/rifle.png" alt="" style="display: none;">
+                <img id="image5" src="./img/granada.png" alt="" style="display: none;">
+                <img id="image6" src="./img/kevlar.png" alt="" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <div class="equipamento">
+        <div class="superior">
+            <h2>Mi Equipamento:</h2>
+            <p>$ <span id="dinero2"></span></p>
+        </div>
+        <hr class="hr-2">
+        <div id="equipamento">
+            <!-- Aqui van a ir los items que compremos -->
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

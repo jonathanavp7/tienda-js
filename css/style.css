@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/map.jpg);
+}
+
+h1 {
+    padding: 20px 30px;
+    color: white;
+}
+
+.contenedor-tienda {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 50px;
+}
+
+.equipamento {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    color: white;
+    padding: 20px 30px;
+}
+
+.categorias {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+hr {
+    height: 2px;
+    background-color: white;
+}
+
+#equipamento {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+.hr-2 {
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.menu ul li {
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.pistolas, .escopetas, .semi-auto, .rifles, .granadas, .casco-chaleco {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border: rgb(214, 157, 33) 2px solid;
+}
+
+.menu ul li:hover {
+    background-color: rgb(214, 157, 33);
+    color: black;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.superior p {
+    align-self: center;
+    color: white;
+    padding-right: 60px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "categorias img";
+}
+
+#images {
+    align-self: center;
+    justify-self: center;
+}
